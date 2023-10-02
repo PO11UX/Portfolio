@@ -1,0 +1,62 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "name": "Angular"
+      },
+      {
+        "id": 2,
+        "name": "JavaScript(TS)"
+      },
+      {
+        "id": 3,
+        "name": "CSS(SCSS)"
+      },
+      {
+        "id": 4,
+        "name": "RxJs"
+      },
+      {
+        "id": 5,
+        "name": "NgRx"
+      },
+      {
+        "id": 6,
+        "name": "Rest API"
+      },
+      {
+        "id": 7,
+        "name": "Angular universal(SSR)"
+      },
+      {
+        "id": 8,
+        "name": "Angular CLI"
+      },
+      {
+        "id": 9,
+        "name": "Bootstrap"
+      },
+      {
+        "id": 10,
+        "name": "FIGMA"
+      },
+      {
+        "id": 11,
+        "name": "Adobe xd"
+      },
+      {
+        "id": 12,
+        "name": "AGILE"
+      },
+      {
+        "id": 13,
+        "name": "Git"
+      },
+      {
+        "id": 14,
+        "name": "JIRA"
+      }
+    ]
+  }
+
+

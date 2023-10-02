@@ -1,0 +1,35 @@
+<section id="projects" class="projects sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-bg">
+      <span class="heading-sec__main">Projects</span>
+      <span class="heading-sec__sub">
+        Here you will find some of the personal and clients projects that I created
+      </span>
+    </h2>
+
+    <div class="projects__content">
+      <div class="projects__row" *ngFor="let project of projects">
+        <div class="projects__row-img-cont">
+          <img
+            [src]="project.image"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+          
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">{{project.name}}</h3>
+          <p class="projects__row-content-desc">
+            {{project.description}}
+          </p>
+          <button
+            (click)="showDetails(project.id)"
+            class="btn btn--med btn--theme"
+            >Case Study</button
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

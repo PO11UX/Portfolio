@@ -1,0 +1,73 @@
+<header class="header">
+    <div class="header__content">
+      <div class="header__logo-container" (click)="scrollToSection('home')">
+        <div class="header__logo-img-cont">
+          <img
+            src="./assets/png/john-doe.png"
+            alt="Ram Maheshwari Logo Image"
+            class="header__logo-img"
+          />
+        </div>
+        <span class="header__logo-sub" >Saba Chilingarashvili</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a (click)="scrollToSection('home')" class="header__link cursor-pointer"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a  (click)="scrollToSection('about-me')" class="header__link cursor-pointer">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a (click)="scrollToSection('projects')" class="header__link cursor-pointer">
+              Projects
+            </a>
+          </li>
+          <!-- <li class="header__link-wrapper">
+            <a (click)="scrollToSection('contact')" class="header__link cursor-pointer"> Contact </a>
+          </li> -->
+          <li class="header__link-wrapper">
+            <span class="header__link">
+              <input type="checkbox" class="toggle-button" [ngClass]="{'darkMode': darkMode}"  (click)="toggleTheme()" id="darkmode">
+            </span>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont" (click)="burgerClick()">
+          <img
+            src="./assets/svg/ham-menu.svg"
+            alt="hamburger menu"
+            class="header__main-ham-menu icon"
+          />
+          <img
+            src="./assets/svg/ham-menu-close.svg"
+            alt="hamburger menu close "
+            class="header__main-ham-menu-close d-none icon"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a (click)="scrollToSection('home')" > Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a (click)="scrollToSection('about-me')"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a (click)="scrollToSection('projects')" > Projects </a>
+          </li>
+          <li class="header__sm-menu-link">
+              <input type="checkbox" class="toggle-button" [ngClass]="{'darkMode': darkMode}" (click)="toggleTheme()" id="darkmode">
+          </li>
+
+          <!-- <li class="header__sm-menu-link">
+            <a href="./index.html#contact"> Contact </a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </header>

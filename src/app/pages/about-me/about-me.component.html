@@ -1,0 +1,45 @@
+<section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              As a <strong>Angular developer</strong>, I've accumulated over 2 years of
+              professional experience within a dynamic startup software
+              development company.
+              </p>
+              <p class="about__content-details-para"> 
+              During this time, I had the opportunity to be
+              a primary <strong>front-end developer</strong> across diverse <strong>projects</strong>. This role not
+              only assumed increased responsibilities but also overseeing the
+              entire development life cycle. I was actively involved in presenting
+              <strong>project demos</strong> to the clients and analyzing client requirements,
+              giving suggestions and feedback.
+            </p>
+            <p class="about__content-details-para">
+              Currently, I'm seeking new
+              challenges and opportunities for personal and professional
+              development. Feel free to
+              <strong>contact</strong> me here.
+            </p>
+          </div>
+          <a (click)="scrollToSection('contact')" class="btn btn--med btn--theme dynamicBgClr cursor-pointer"
+            >Contact</a
+          >
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills">
+            <div class="skills__skill" *ngFor="let skill of skills">{{skill.name}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
